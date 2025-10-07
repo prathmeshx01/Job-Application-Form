@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Application Form</title> 
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Job Application Form</h1>
+      <p id="description">Thank You For Applying</p>
+      </header>
+      <form id="survey-form">
+          <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" placeholder="Enter your name" required name="name" id="name" class="form" required>
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" placeholder="Enter your email" name="email" id="email" class="form" required>
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age</label><span class="clue">(optional)</span><input type="number" placeholder="Enter your age" name="Age" id="number" min="15" max="90" class="form">
+          </div>
+          <div class="form-group">
+            <p>Which option best descibes your current role?</p>
+            <select name="role" id="dropdown" class="form"  required>
+              <option value="student">Student</option>
+              <option value="job">Full Time job</option>
+              <option value="lerner">learner</option>
+              <option value="prefer-no">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div  class="form-group">
+            <p>Would you reccomend this company to a friend?</p>
+            <label ><input type="radio" name="reccomend" value="definitely" class="input-radio" selected>Definitely</label>
+            <label><input  type="radio" name="reccomend" value="maybe" class="input-radio">Maybe</label>
+            <label><input  type="radio" name="reccomend" value="not-sure" class="input-radio">Not sure</label>
+          </div>
+            <div class="form-group">
+              <p>Which technologies do you work with?</p>
+              <span>Check all that apply</span>
+              <label>
+                <input name="prefer" value="front-end" type="checkbox" class="input-checkbox">Front End
+              </label>
+              <label>
+                <input name="prefer" value="back-end" type="checkbox" class="input-checkbox">Back End
+              </label>
+              <label>
+                <input name="prefer" value="react" type="checkbox" class="input-checkbox">React
+              </label>
+              <label>
+                <input name="prefer" value="Python" type="checkbox" class="input-checkbox">Python
+              </label>
+              <label>
+              <input name="prefer" value="other" type="checkbox" class="input-checkbox">Other
+              </label>
+            </div>
+         <div class="form-group">
+        <p>What would you like to improve?</p>
+        <label>
+          <input type="checkbox" name="improve" value="salary" class="input-checkbox"/> Salary
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="work-environment" class="input-checkbox"/>
+          Work Environment
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="growth" class="input-checkbox"/> Career Growth
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Additional comments or suggestion</p>
+        <textarea id="comments" placeholder="Enter your comment here..." class="input-textarea" name="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit-button" id="submit">Submit</button>
+      </div>
+      </form>
+  </div>
+  </body>
+
+</html>
